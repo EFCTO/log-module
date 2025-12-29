@@ -5,7 +5,7 @@ from typing import Optional
 
 import discord
 
-LOG_CHANNEL_ID = os.getenv("MANAGEMENT_LOG_CHANNEL_ID", "1422873243554943037")
+LOG_CHANNEL_ID = os.getenv("MANAGEMENT_LOG_CHANNEL_ID")
 
 _channel_cache: weakref.WeakKeyDictionary[
     discord.Client, discord.abc.Messageable
